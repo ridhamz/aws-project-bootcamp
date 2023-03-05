@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python
 
 # Inside Container
 # make a new folder inside container
@@ -26,4 +26,4 @@ EXPOSE ${PORT}
 
 # CMD (Command)
 # python3 -m flask run --host=0.0.0.0 --port=4567
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000"]
